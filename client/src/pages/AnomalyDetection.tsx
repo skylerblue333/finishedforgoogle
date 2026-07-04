@@ -86,7 +86,7 @@ const PRICING_TIERS = [
     badge: "Most Popular",
   },
   {
-    name: "Enterprise",
+    name: "Scalable",
     price: 2499,
     period: "month",
     features: ["Unlimited shipments", "Dedicated Slack channel", "1-year retention", "Custom ML model training", "SLA 99.9% uptime", "SOC 2 Type II"],
@@ -171,7 +171,7 @@ export default function AnomalyDetection() {
             </div>
             <div>
               <h1 className="font-bold text-white text-lg leading-none">Logistics AI Anomaly Console</h1>
-              <p className="text-xs text-slate-400 mt-0.5">Enterprise ML telemetry auditing platform</p>
+              <p className="text-xs text-slate-400 mt-0.5">Scalable ML telemetry auditing platform</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -219,7 +219,7 @@ export default function AnomalyDetection() {
                   : "text-slate-400 hover:text-slate-200"
               }`}
             >
-              {tab === "audit" ? "Manual Audit" : tab === "stream" ? "Live Stream" : tab === "pricing" ? "Enterprise Pricing" : "Legal & Compliance"}
+              {tab === "audit" ? "Manual Audit" : tab === "stream" ? "Live Stream" : tab === "pricing" ? "Scalable Pricing" : "Legal & Compliance"}
             </button>
           ))}
         </div>
@@ -438,11 +438,11 @@ export default function AnomalyDetection() {
           </div>
         )}
 
-        {/* ── TAB: Enterprise Pricing ───────────────────────────────────────── */}
+        {/* ── TAB: Scalable Pricing ───────────────────────────────────────── */}
         {selectedTab === "pricing" && (
           <div className="space-y-8 pb-12">
             <div className="text-center space-y-2">
-              <h2 className="text-2xl font-bold text-white">Enterprise Subscription Plans</h2>
+              <h2 className="text-2xl font-bold text-white">Scalable Subscription Plans</h2>
               <p className="text-slate-400">SOC 2 Type II compliant. PCI-DSS via Stripe. Cancel anytime.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -506,7 +506,7 @@ export default function AnomalyDetection() {
         {selectedTab === "legal" && (
           <div className="space-y-6 pb-12 max-w-4xl">
             <div className="space-y-2">
-              <h2 className="text-2xl font-bold text-white">Enterprise Legal Compliance</h2>
+              <h2 className="text-2xl font-bold text-white">Scalable Legal Compliance</h2>
               <p className="text-slate-400">Master Services Agreement (MSA) — SOC 2 / GDPR / PCI-DSS compliant</p>
             </div>
             {[

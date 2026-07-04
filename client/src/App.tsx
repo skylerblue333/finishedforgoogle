@@ -148,7 +148,7 @@ const DeveloperMarketplace = lazy(() => import("./pages/DeveloperMarketplace"));
 const InvestorPitch = lazy(() => import("./pages/InvestorPitch"));
 const EventPlanner = lazy(() => import("./pages/EventPlanner"));
 const UniversalSearch = lazy(() => import("./pages/UniversalSearch"));
-const Enterprise = lazy(() => import("./pages/Enterprise"));
+const Scalable = lazy(() => import("./pages/Scalable"));
 const TournamentBracketPage = lazy(() => import("./pages/TournamentBracket"));
 const GovernanceWizard = lazy(() => import("./pages/GovernanceWizard"));
 const VODArchive = lazy(() => import("./pages/VODArchive"));
@@ -365,7 +365,7 @@ function LegacyRouter() {
         <Route path="/language-exchange-admin" component={LanguageExchangeAdmin} />
 
         {/* Fallback */}
-        {/* New Enterprise & DevOps Pages */}
+        {/* New Scalable & DevOps Pages */}
         <Route path="/anomaly-detection" component={AnomalyDetection} />
         <Route path="/devops" component={DevOps} />
         <Route path="/logistics" component={LogisticsOptimizer} />
@@ -376,7 +376,7 @@ function LegacyRouter() {
         <Route path="/investor-pitch" component={InvestorPitch} />
         <Route path="/event-planner" component={EventPlanner} />
         <Route path="/search" component={UniversalSearch} />
-        <Route path="/enterprise" component={Enterprise} />
+        <Route path="/enterprise" component={Scalable} />
                   <Route path="/webhooks" component={WebhookManager} />
           <Route path="/rate-limits" component={RateLimitDashboard} />
           <Route path="/clips" component={StreamClip} />
@@ -563,7 +563,7 @@ function LegacyRouter() {
           <Route path="/blockchain-custody" component={BlockchainCustody} />
           <Route path="/free-will" component={FreeWillDashboard} />
           <Route path="/digital-nation" component={DigitalNationMode} />
-          <Route path="/enterprise-analytics" component={EnterpriseAnalytics} />
+          <Route path="/enterprise-analytics" component={ScalableAnalytics} />
           <Route path="/situation-room" component={SituationRoom} />
           <Route path="/life-command" component={LifeCommand} />
           <Route path="/destiny-engine" component={DestinyEngine} />
@@ -758,7 +758,7 @@ const LanguageExchangeAdmin = lazy(() => import("./pages/LanguageExchangeAdmin")
 const BlockchainCustody = lazy(() => import("./pages/BlockchainCustody"));
 const FreeWillDashboard = lazy(() => import("./pages/FreeWillDashboard"));
 const DigitalNationMode = lazy(() => import("./pages/DigitalNationMode"));
-const EnterpriseAnalytics = lazy(() => import("./pages/EnterpriseAnalytics"));
+const ScalableAnalytics = lazy(() => import("./pages/ScalableAnalytics"));
 const SituationRoom = lazy(() => import("./pages/SituationRoom"));
 const LifeCommand = lazy(() => import("./pages/LifeCommand"));
 const DestinyEngine = lazy(() => import("./pages/DestinyEngine"));
